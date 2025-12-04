@@ -67,8 +67,8 @@ const config: Config = {
       },
     },
     navbar: {
-      // Don't let the title share the logo link
-      title: '', // or remove this line entirely
+      // IMPORTANT: remove or comment out the title so it doesn't show under the brand link
+      // title: 'Home',
 
       logo: {
         alt: 'Nominis',
@@ -78,9 +78,8 @@ const config: Config = {
       },
 
       items: [
-        // Explicit Home item -> docs homepage
         {
-          to: '/',             // documentation homepage (your landing page)
+          to: '/',            // docs homepage
           label: 'Home',
           position: 'left',
         },
