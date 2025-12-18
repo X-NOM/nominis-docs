@@ -17,12 +17,12 @@ const config: Config = {
   
 
   // Set the production url of your site here
-  //url: 'https://www.docs.nominis.io',
-  url: 'https://yotamb-nominis.github.io',
+  url: 'https://www.docs.nominis.io',
+  //url: 'https://yotamb-nominis.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  //baseUrl: '/',
-  baseUrl: '/docs.nominis.io/',
+  baseUrl: '/',
+  //baseUrl: '/docs.nominis.io/',
   trailingSlash: true, // explicit is better for GitHub Page
   
   // GitHub pages deployment config.
