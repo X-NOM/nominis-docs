@@ -9,3 +9,25 @@
   height: 200px;
   width: 200px;
 }
+
+.featureCard {
+  text-decoration: none !important;
+  color: inherit;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(55, 155, 255, 0.2);
+  background-color: rgba(55, 155, 255, 0.05);
+}
+
+.featureContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+

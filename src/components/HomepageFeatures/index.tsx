@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -7,6 +8,7 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -19,6 +21,7 @@ const FeatureList: FeatureItem[] = [
         single request. Ideal for pre-screening and batch checks.
       </>
     ),
+    link: '/nominis/Quick_Address_Check',
   },
   {
     title: 'Wallet Screening (Deep)',
@@ -30,6 +33,7 @@ const FeatureList: FeatureItem[] = [
         70+ blockchains.
       </>
     ),
+    link: '/nominis/Wallet_Screening',
   },
   {
     title: 'KYT (Transactions)',
@@ -40,20 +44,23 @@ const FeatureList: FeatureItem[] = [
         depth. Surface proximity, risk categories, and behavioral indicators.
       </>
     ),
+    link: '/nominis/KYT',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description, link}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <Link to={link} className={clsx('col col--4', styles.featureCard)}>
+      <div className={styles.featureContent}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3">{title}</Heading>
+          <p>{description}</p>
+        </div>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
+    </Link>
   );
 }
 

@@ -142,3 +142,8 @@ Buttons: #2563EB
   opacity: 1 !important;          /* remove the faint look */
   color: #ffffff !important;       /* high-contrast icon on your dark navbar */
 }
+
+/* Hide keyboard hints in DocSearch footer */
+.DocSearch-Footer {
+  display: none !important;
+}
