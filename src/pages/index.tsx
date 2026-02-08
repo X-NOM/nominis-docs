@@ -15,7 +15,7 @@ function HomepageHeader() {
       <div className="container">
         <img src={useBaseUrl('/img/Logo_new_all_white.png')} alt="Nominis" className={styles.heroLogo} />
         <p className={styles.heroSubtitle}>
-          Intelligent crypto compliance. Faster insights, smarter decisions.
+          Industry-leading API: Receive the complete money trail, off-chain & geo-intelligence data via a single endpoint
         </p>
         <div className={styles.heroCtas}>
           <Link className={clsx('button button--lg', styles.ctaPrimary)} to="/intro">
