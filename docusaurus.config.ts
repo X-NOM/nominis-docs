@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Nominis API',
   tagline: 'Intelligent crypto compliance. Faster insights, smarter decisions.',
-  favicon: 'img/Icons_3.ico',
+  favicon: 'img/Icons_3.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
