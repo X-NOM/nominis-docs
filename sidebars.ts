@@ -53,6 +53,11 @@ const sidebars: SidebarsConfig = {
           label: 'Address Check',
           id: 'nominis/Wallet_Screening',
         },
+        {
+          type: 'doc',
+          label: 'Transactions',
+          id: 'nominis/Transactions',
+        },
       ],
     },
     
