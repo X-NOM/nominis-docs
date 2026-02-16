@@ -4,7 +4,7 @@
   <ShortName>Nominis API</ShortName>
   <Description>Search Nominis API</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://docs.nominis.io/img/Icons_3.svg</Image>
+  <Image width="16" height="16" type="image/x-icon">https://docs.nominis.io/img/logo-mini.svg</Image>
   <Url type="text/html" method="get" template="https://docs.nominis.io/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://docs.nominis.io/opensearch.xml" />
   <moz:SearchForm>https://docs.nominis.io/</moz:SearchForm>
