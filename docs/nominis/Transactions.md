@@ -20,6 +20,8 @@ The Transaction API provides in-depth transaction data for a specified wallet. P
 | `address` | string | Yes      | Wallet address to assess |
 | `sender`  | string | No       | Sender wallet address to assess (for incoming transactions) |
 | `receiver` | string | No      | Receiver wallet address to assess (for outgoing transactions) |
+| `first_tx` | integer | No      | Unix epoch timestamp (seconds) specifying the earliest transaction to include in results |
+| `last_tx` | integer | No      | Unix epoch timestamp (seconds) specifying the latest transaction to include in results |
 | `api_key` | string | Yes      | The API key provided to the client |
 
 ---
@@ -156,5 +158,7 @@ print(response.json())
 - For error handling, check the `status` and `error` fields in the response.  
 - Use `sender` parameter to filter for incoming transactions from a specific address.
 - Use `receiver` parameter to filter for outgoing transactions to a specific address.
+- Use `first_tx` and `last_tx` parameters to narrow the transaction search window by specifying a time range in Unix epoch format.
 - Omit both `sender` and `receiver` to retrieve all transactions for the wallet.
+- Omit both `first_tx` and `last_tx` to retrieve transactions across all time periods.
 - For support, contact the [Nominis API team](/intro#support)
