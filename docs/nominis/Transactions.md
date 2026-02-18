@@ -1,7 +1,7 @@
 # Transactions API Documentation
 
 ## Overview
-The Transaction API provides in-depth transaction data for a specified wallet. Provide an optional sender or receiver address to analyze all transactions between two wallets, or leave them both blank to receive all transaction information for a wallet.
+The Transactions API provides in-depth transaction data for a specified wallet. Provide an optional sender or receiver address to analyze all transactions between two wallets, or leave them both blank to receive all transaction information for a wallet.
 
 ---
 
@@ -16,13 +16,13 @@ The Transaction API provides in-depth transaction data for a specified wallet. P
 
 | Parameter | Type   | Required | Description |
 |-----------|--------|----------|-------------|
+| `api_key` | string | Yes      | The API key provided to the client |
 | `chain`   | string | Yes      | Blockchain network of the transaction (e.g., `eth`, `ltc`) |
 | `address` | string | Yes      | Wallet address to assess |
 | `sender`  | string | No       | Sender wallet address to assess (for incoming transactions) |
 | `receiver` | string | No      | Receiver wallet address to assess (for outgoing transactions) |
 | `first_tx` | integer | No      | Unix epoch timestamp (seconds) specifying the earliest transaction to include in results |
 | `last_tx` | integer | No      | Unix epoch timestamp (seconds) specifying the latest transaction to include in results |
-| `api_key` | string | Yes      | The API key provided to the client |
 
 ---
 
