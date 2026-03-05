@@ -10,7 +10,7 @@ Nominis provides compliance-first crypto APIs to screen wallets and transactions
 ## Base URL
 
 ```
-https://authapi0.xplorisk.com:8443/v2
+https://authapi0.nominis.io:8443/v2
 ```
 
 - Examples:
@@ -47,7 +47,7 @@ Include your API key as `api_key` with each request:
 Run a fast check on an address:
 
 ```bash
-curl -X GET "https://authapi0.xplorisk.com:8443/v2/address/quick_check?address=0x332f3d83b771d0611156eb04308e168e50fd9e30&api_key=YOUR_API_KEY"
+curl -X GET "https://authapi0.nominis.io:8443/v2/address/quick_check?address=0x332f3d83b771d0611156eb04308e168e50fd9e30&api_key=YOUR_API_KEY"
 ```
 
 You’ll receive JSON with fields like `status`, `error`, `request_type`, and a `data` array containing attribution, classifications, and a `quick_score` per address.

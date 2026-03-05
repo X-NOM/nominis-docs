@@ -7,7 +7,7 @@ Users can assess any wallet address in over 70 different blockchains, with an op
 ---
 
 ## Endpoint
-- **URL:** `https://authapi0.xplorisk.com:8443/v2/address/check`  
+- **URL:** `https://authapi0.nominis.io:8443/v2/address/check`  
 - **Method:** `POST`  
 - **Content-Type:** `application/json`
 
@@ -38,7 +38,7 @@ data = {
 }
 
 response = requests.post(
-    "https://authapi0.xplorisk.com:8443/v2/address/check",
+    "https://authapi0.nominis.io:8443/v2/address/check",
     json=data
 )
 
@@ -84,7 +84,7 @@ The initial response contains a unique request ID that should be used to check t
 
 After receiving the request ID, query the following endpoint every 10 seconds until status is `done`.
 
-- **Endpoint:** `https://authapi0.xplorisk.com:8443/v2/address/check/{request_id}`  
+- **Endpoint:** `https://authapi0.nominis.io:8443/v2/address/check/{request_id}`  
 - **Method:** `GET`  
 - **Content-Type:** `application/json`
 

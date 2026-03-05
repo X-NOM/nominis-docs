@@ -7,7 +7,7 @@ Users can assess any transaction in over 70 different blockchains, with an optio
 ---
 
 ## Endpoint
-- **URL:** `https://authapi0.xplorisk.com:8443/v2/transaction/check`  
+- **URL:** `https://authapi0.nominis.io:8443/v2/transaction/check`  
 - **Method:** `POST`  
 - **Content-Type:** `application/json`
 
@@ -37,7 +37,7 @@ data = {
 }
 
 response = requests.post(
-    "https://authapi0.xplorisk.com:8443/v2/transaction/check",
+    "https://authapi0.nominis.io:8443/v2/transaction/check",
     json=data
 )
 
@@ -83,7 +83,7 @@ The initial response contains a unique request ID to check screening status.
 
 After receiving the request ID, query every 10 seconds until status is `done`.
 
-- **Endpoint:** `https://authapi0.xplorisk.com:8443/v2/transaction/check/{request_id}`  
+- **Endpoint:** `https://authapi0.nominis.io:8443/v2/transaction/check/{request_id}`  
 - **Method:** `GET`  
 - **Content-Type:** `application/json`
 

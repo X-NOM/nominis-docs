@@ -6,7 +6,7 @@ The Quick Address Check API allows users to get a quick risk score and attributi
 ---
 
 ## Endpoint
-- **URL:** `https://authapi0.xplorisk.com:8443/v2/address/quick_check`  
+- **URL:** `https://authapi0.nominis.io:8443/v2/address/quick_check`  
 - **Method:** `GET`  
 - **Content-Type:** `application/json`
 
@@ -27,7 +27,7 @@ The Quick Address Check API allows users to get a quick risk score and attributi
 import requests
 
 response = requests.get(
-    "https://authapi0.xplorisk.com:8443/v2/address/quick_check?"
+    "https://authapi0.nominis.io:8443/v2/address/quick_check?"
     "address=0x05b7013adcc264ad73388563a1e98869aa4301ee,0x332f3d83b771d0611156eb04308e168e50fd9e30&"
     "api_key=x_111111_1111111_11111_11111"
 )

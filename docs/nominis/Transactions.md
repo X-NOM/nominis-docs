@@ -6,7 +6,7 @@ The Transactions API provides in-depth transaction data for a specified wallet. 
 ---
 
 ## Endpoint
-- **URL:** `https://authapi0.xplorisk.com:8443/v2/transactions`  
+- **URL:** `https://authapi0.nominis.io:8443/v2/transactions`  
 - **Method:** `GET`  
 - **Content-Type:** `application/json`
 
@@ -33,7 +33,7 @@ The Transactions API provides in-depth transaction data for a specified wallet. 
 import requests
 
 response = requests.get(
-    "https://authapi0.xplorisk.com:8443/v2/transactions?"
+    "https://authapi0.nominis.io:8443/v2/transactions?"
     "chain=ltc&"
     "address=ltc1qyrrmwf3zl7e2h8u2pjkxc4pwym8r0vu26yczn9&"
     "api_key=x_11111111_1111111_11111_11111"
@@ -47,7 +47,7 @@ print(response.json())
 import requests
 
 response = requests.get(
-    "https://authapi0.xplorisk.com:8443/v2/transactions?"
+    "https://authapi0.nominis.io:8443/v2/transactions?"
     "chain=ltc&"
     "address=ltc1qyrrmwf3zl7e2h8u2pjkxc4pwym8r0vu26yczn9&"
     "sender=ltc1qy2aabbccddee3344ff5566gg7788hh99iijjkkll&"
@@ -62,7 +62,7 @@ print(response.json())
 import requests
 
 response = requests.get(
-    "https://authapi0.xplorisk.com:8443/v2/transactions?"
+    "https://authapi0.nominis.io:8443/v2/transactions?"
     "chain=ltc&"
     "address=ltc1qyrrmwf3zl7e2h8u2pjkxc4pwym8r0vu26yczn9&"
     "receiver=ltc1qz9xxyyzz8899aa0011bb2233cc4455dd6677eeff&"
