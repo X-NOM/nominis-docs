@@ -72,7 +72,7 @@ const config: Config = {
 
       logo: {
         alt: 'Nominis',
-        src: 'img/white_transparent.png',
+        src: 'img/logo-white.svg',
         href: 'https://www.nominis.io', // logo -> marketing site
         target: '_blank',
       },
@@ -141,8 +141,8 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     algolia: {
-      appId: process.env.ALGOLIA_APP_ID || '',
-      apiKey: process.env.ALGOLIA_SEARCH_API_KEY || '',
+      appId: process.env.ALGOLIA_APP_ID || '123',
+      apiKey: process.env.ALGOLIA_SEARCH_API_KEY || '123',
       indexName: 'Docs Crawler',
       contextualSearch: true,
       searchPagePath: 'search',

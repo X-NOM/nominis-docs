@@ -110,7 +110,8 @@ Buttons: #2563EB
 
 
 .navbar__logo { 
-  height: 68px; 
+  /* Constrain navbar logo height for most logos; width kept auto to preserve aspect ratio */
+  height: 18px; 
   width: auto;
   transform: translateY(1px); /* adjust to -2px/-3px if it still feels low */
 }
@@ -123,7 +124,7 @@ Buttons: #2563EB
 
 @media (max-width: 996px) {
   :root { --ifm-navbar-height: 56px; }
-  .navbar__logo { height: 44px; }
+  .navbar__logo { height: 30px; }
   .navbar__link { font-size: 15px; padding: 0 10px; }
   .navbar__items--left, .navbar__items--right { gap: 12px; }
 }
