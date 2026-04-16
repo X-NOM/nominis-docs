@@ -29,5 +29,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+.featureContent h3 {
+  min-height: 3rem;
+  margin-bottom: 0.5rem;
 }
 

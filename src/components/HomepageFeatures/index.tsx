@@ -46,11 +46,22 @@ const FeatureList: FeatureItem[] = [
     ),
     link: '/nominis/KYT',
   },
+  {
+    title: 'Transaction Tracer',
+    Svg: require('@site/static/img/tx_tracer.svg').default,
+    description: (
+      <>
+        Trace transaction flows forward or backward to identify fund sources
+        and destinations with configurable depth and risk scoring.
+      </>
+    ),
+    link: '/nominis/TX_Tracer',
+  },
 ];
 
 function Feature({title, Svg, description, link}: FeatureItem) {
   return (
-    <Link to={link} className={clsx('col col--4', styles.featureCard)}>
+    <Link to={link} className={clsx('col col--3', styles.featureCard)}>
       <div className={styles.featureContent}>
         <div className="text--center">
           <Svg className={styles.featureSvg} role="img" />
