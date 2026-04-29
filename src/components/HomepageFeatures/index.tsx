@@ -13,17 +13,6 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Quick Address Check',
-    Svg: require('@site/static/img/address_Nominis.svg').default,
-    description: (
-      <>
-        Get fast attribution and a risk score for up to 50 wallet addresses in a
-        single request. Ideal for pre-screening and batch checks.
-      </>
-    ),
-    link: '/nominis/Quick_Address_Check',
-  },
-  {
     title: 'Wallet Screening (Deep)',
     Svg: require('@site/static/img/wallet_with_Nominis_color.svg').default,
     description: (
@@ -56,6 +45,17 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     link: '/nominis/TX_Tracer',
+  },
+  {
+    title: 'Quick Label Check',
+    Svg: require('@site/static/img/address_Nominis.svg').default,
+    description: (
+      <>
+        Get fast attribution and a risk score for up to 50 wallet addresses in a
+        single request. Ideal for pre-screening and batch checks.
+      </>
+    ),
+    link: '/nominis/Quick_Address_Check',
   },
 ];
 
