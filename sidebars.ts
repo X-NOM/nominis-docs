@@ -63,6 +63,11 @@ const sidebars: SidebarsConfig = {
           label: 'TX Tracer',
           id: 'nominis/TX_Tracer',
         },
+        {
+          type: 'doc',
+          label: 'Case Management',
+          id: 'nominis/Case_Management',
+        },
       ],
     },
     
