@@ -47,6 +47,17 @@ const FeatureList: FeatureItem[] = [
     link: '/nominis/TX_Tracer',
   },
   {
+    title: 'Case Management',
+    Svg: require('@site/static/img/undraw_database-tables_yft5.svg').default,
+    description: (
+      <>
+        Retrieve historical wallet and transaction checks, then update case
+        status, assignee, and analyst notes in your review workflow.
+      </>
+    ),
+    link: '/nominis/Case_Management',
+  },
+  {
     title: 'Quick Label Check',
     Svg: require('@site/static/img/address_Nominis.svg').default,
     description: (
@@ -61,7 +72,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, description, link}: FeatureItem) {
   return (
-    <Link to={link} className={clsx('col col--3', styles.featureCard)}>
+    <Link to={link} className={clsx('col', styles.featureCol, styles.featureCard)}>
       <div className={styles.featureContent}>
         <div className="text--center">
           <Svg className={styles.featureSvg} role="img" />

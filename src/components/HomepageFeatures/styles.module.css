@@ -10,6 +10,12 @@
   width: 200px;
 }
 
+.featureCol {
+  --ifm-col-width: 20%;
+  flex: 0 0 var(--ifm-col-width);
+  max-width: var(--ifm-col-width);
+}
+
 .featureCard {
   text-decoration: none !important;
   color: inherit;
@@ -35,5 +41,23 @@
 .featureContent h3 {
   min-height: 3rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .featureCol {
+    --ifm-col-width: 33.3333%;
+  }
+}
+
+@media (max-width: 996px) {
+  .featureCol {
+    --ifm-col-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .featureCol {
+    --ifm-col-width: 100%;
+  }
 }
 
