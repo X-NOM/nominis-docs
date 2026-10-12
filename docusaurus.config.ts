@@ -59,7 +59,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: '/img/logo-mini.svg',
+    image: '/img/logo-mini.png',
     docs: {
       sidebar: {
         hideable: true,
