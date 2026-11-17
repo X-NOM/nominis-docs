@@ -90,16 +90,9 @@ const config: Config = {
           label: 'Endpoints',
         },
         {
-          type: 'dropdown',
+          to: '/intro',
           label: 'Additional Resources',
           position: 'left',
-          items: [
-            {
-              type: 'doc',
-              docId: 'additional-resources/supported-block-chains',
-              label: 'Supported Block Chains',
-            },
-          ],
         },
       ],
     },

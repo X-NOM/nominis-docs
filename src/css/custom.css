@@ -161,3 +161,19 @@ Buttons: #2563EB
   line-height: 1.5;
   vertical-align: middle;
 }
+
+.navbar__link[href="/intro"] {
+  color: #E6EDF7 !important;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.navbar__link[href="/intro"]:hover,
+.navbar__link[href="/intro"]:focus-visible {
+  color: #A8D6FF !important;
+  text-decoration: none;
+}
+
+.navbar__link[href="/intro"]::after {
+  display: none !important;
+}
