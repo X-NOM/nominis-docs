@@ -148,3 +148,16 @@ Buttons: #2563EB
 .DocSearch-Footer {
   display: none !important;
 }
+
+.lite-badge {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.5;
+  vertical-align: middle;
+}

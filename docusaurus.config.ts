@@ -89,6 +89,18 @@ const config: Config = {
           position: 'left',
           label: 'Endpoints',
         },
+        {
+          type: 'dropdown',
+          label: 'Additional Resources',
+          position: 'left',
+          items: [
+            {
+              type: 'doc',
+              docId: 'additional-resources/supported-block-chains',
+              label: 'Supported Block Chains',
+            },
+          ],
+        },
       ],
     },
     footer: {

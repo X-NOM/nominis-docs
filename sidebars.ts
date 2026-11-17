@@ -70,7 +70,17 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    
+    {
+      type: 'category',
+      label: 'Additional Resources',
+      items: [
+        {
+          type: 'doc',
+          label: 'Supported Block Chains',
+          id: 'additional-resources/supported-block-chains',
+        },
+      ],
+    },
   ],
 
 };
