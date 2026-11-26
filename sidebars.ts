@@ -68,6 +68,16 @@ const sidebars: SidebarsConfig = {
           label: 'Case Management',
           id: 'nominis/Case_Management',
         },
+                {
+          type: 'doc',
+          label: 'Address Resolve',
+          id: 'nominis/Address_Resolve',
+        },
+        {
+          type: 'doc',
+          label: 'Address Cluster',
+          id: 'nominis/Address_Cluster',
+        },
       ],
     },
     {
@@ -78,6 +88,11 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           label: 'Supported Block Chains',
           id: 'additional-resources/supported-block-chains',
+        },
+        {
+          type: 'link',
+          label: 'Platform User Guide',
+          href: 'https://user-guide.nominis.io',
         },
       ],
     },

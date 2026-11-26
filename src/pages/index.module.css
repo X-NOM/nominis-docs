@@ -58,6 +58,7 @@ Buttons: #2563EB
 .heroCtas {
   display: flex;
   justify-content: center;
+  gap: 12px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -77,18 +78,25 @@ Buttons: #2563EB
   border-color: #1D4ED8 !important;
 }
 
+.ctaSecondary {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.72) !important;
+  color: #ffffff !important;
+}
+
+.ctaSecondary:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: #ffffff !important;
+}
+
 @media screen and (max-width: 996px) {
   /*
   .heroBanner {
     padding: 2rem;
   }
   */
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  .heroCtas {
+    align-items: center;
+    flex-direction: column;
+  }
 }

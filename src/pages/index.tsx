@@ -21,6 +21,13 @@ function HomepageHeader() {
           <Link className={clsx('button button--lg', styles.ctaPrimary)} to="/intro">
             Quick Start
           </Link>
+          <Link
+            className={clsx('button button--lg', styles.ctaSecondary)}
+            href="https://user-guide.nominis.io"
+            target="_blank"
+            rel="noopener noreferrer">
+            Platform User Guide
+          </Link>
         </div>
       </div>
     </header>
